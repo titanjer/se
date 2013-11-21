@@ -1,0 +1,224 @@
+@import 'nib'
+
+.nav_icon
+  max-width: 100%
+  float: right
+  margin-right: 1%
+  margin-top: 3px
+  cursor: pointer
+  a
+    margin-right: 5px
+
+#col_profile 
+  min-height: 80%
+  min-width: 60%
+  position: relative
+  float: left
+  top: 100px
+  left: 10%
+  vertical-align: middle
+  word-wrap: break-word
+  
+
+
+#col_friends
+  width: 30%
+  float: right
+  #col_suggest
+    background-color: #FFF
+    height: auto
+    position: relative
+    top: 100px
+    right: 10%
+    border: 0
+    box-shadow: 0px 1px 2px 0px rgba(20%,20%,40%,0.3) 
+    padding: 8px
+    margin-bottom: 8px
+    word-wrap: break-word
+    img
+      width: 60px
+    span
+      font-size: 12pt
+      color: #2c2c2c
+      position: absolute
+      top: 30px
+      left: 75px
+    button
+      border:0
+      cursor: pointer
+    p
+      margin:10px 0 50px 0
+    .cancel
+      font-size: 14pt
+      border: 0
+      color: #666
+      position: absolute
+      right: 10px
+      padding: 2px 5px
+    .ok
+      background-color: #ff9376
+      color: white
+      width: 110px
+      height: 35px
+      font-size: 14pt
+      padding: 5px 0 15px 0
+      position: absolute
+      right: 10px
+      bottom: 10px
+      border-bottom: solid #d48068 5px
+      text-shadow: 0px 1px 2px #d48068
+      &:active
+        background-color: #d48068
+    .endorseTag
+      background-image: url('../images/icon_endorse.png')
+      background-repeat: no-repeat
+      background-position: right top
+      background-size: 24px
+      font-size: 12pt
+      color: #007978
+      width: auto
+      margin: 4px 10px
+      padding: 2px 25px 2px 0
+      cursor: pointer
+    .endorseTagClick
+      background-image: url('../images/icon_unendorse.png')
+      color: gray
+
+#profile
+  img
+    width: 150px 
+    float: left
+  span
+    font-size: 18pt
+    color: #2c2c2c
+    padding: 63px 0 0 10px
+    height: 80px
+    float: left
+
+.add-tags
+  clear: both
+  padding-top:10px 
+  button
+    color: white
+    margin: 0
+    padding: 0
+    border:0
+    display: inline-block
+    cursor: pointer
+    span
+      background-color: #ff9376
+      width: 110px
+      height: 28px
+      font-size: 14pt
+      float: left
+      padding: 7px 0 0 0
+      border-bottom: solid #d48068 5px
+      text-shadow: 0px 1px 2px #d48068, 0px -1px 0px #999
+  .text1
+    font-size: 10pt
+    margin-top: 50%
+    position: absolute
+    margin-top: 10px
+    padding-left: 10px
+    .active
+      color: red
+      font-weight: bold
+
+  .add-tags-toggle-panel-btn
+    background-color: #a1a1a1
+    font-weight: bold
+    width: 40px
+    height: 28px
+    border:0
+    font-size: 20pt
+    float: left
+    padding: 4px 0 3px 0
+    border-bottom: solid #868686 5px
+    text-shadow: 0px 1px 2px #868686, 0px -1px 0px #999
+    &:active
+      background-color: #868686
+    
+
+.add-tags-panel
+  width: 85%
+  padding:30px
+  font-size: 14pt
+  padding: 30px
+  background-color:rgba(100%,100%,100%,0.9)
+  border-bottom: solid #ff9376 5px
+  box-shadow: 1px 2px 3px 0px rgba(20%,20%,40%,0.3)
+  position:absolute 
+  display: none
+
+  input[type=submit]
+    background-color: #ff9376
+    border:0
+    position: absolute
+    right: 10px top: 10px
+    width: 100px
+    height: 38px
+    font-size: 14pt
+    padding: 5px 0 0 0
+    border-bottom: solid #d48068 5px
+    text-shadow: 0px 1px 2px #d48068, 0px -1px 0px #999
+    &:active
+      background-color: #d48068
+
+  input[type="checkbox"]
+    display:none
+
+  input[type="checkbox"] + label
+    color: #444
+  
+  input[type="checkbox"]:checked + label
+    color: #007978
+  
+  input[type="checkbox"] + label span 
+    display:inline-block
+    width:30px
+    height:20px
+    margin-left: 10px
+    background:url('../images/icon_unendorse.png') center center no-repeat
+  
+  input[type="checkbox"]:checked + label span
+    background:url('../images/icon_endorse.png') center center no-repeat
+
+.third
+  width: 30%
+  float: left
+
+#tags
+  clear: both
+  width: 150px 
+  .tagbox
+    width: auto
+    float: right
+  .text3
+    clear: both
+    color: #444
+    font-size: 14pt
+    float: left
+    text-align: right
+    background-color: white
+    margin-top: 10px
+    padding: 7px 10px 7px 10px
+    box-shadow: 1px 2px 3px 0px rgba(20%,20%,40%,0.3)
+  .btn_en
+    background-color: #00a8a7
+    color: white
+    min-width: 40px
+    font-size: 14pt
+    float: left
+    text-align: center
+    margin-top: 10px
+    padding: 7px 0 7px 0
+    cursor: pointer
+    text-shadow: 0px 1px 2px #00a8a7, 0px -1px 0px #999
+    box-shadow: 1px 2px 3px 0px rgba(20%,20%,40%,0.5)
+  .unendorse
+    background: url('../images/icon_unendorse.png') no-repeat center center
+  .endorse
+    background: url('../images/icon_endorse.png') no-repeat center center
+  .mouseover
+    visibility: hidden
+

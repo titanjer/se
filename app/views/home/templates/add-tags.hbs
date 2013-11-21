@@ -1,0 +1,30 @@
+{{#ifLoggedIn}}
+  <!--<p class="clear"></p>-->
+  <button type="button"> 
+    <span>Add Tags</span>
+    <span class="add-tags-toggle-panel-btn">+</span>	
+  </button>
+
+  {{#if active}}
+    <span class="text1">Endorse <span class="active">{{active}}</span> more friends to active the button!</span>
+  {{/if}}
+
+  <div class="add-tags-panel">
+    <form>
+      <div class="third">
+        <p><input type="checkbox" id="t1" /><label for="t1">tag 1<span></span></label></p>
+        <p><input type="checkbox" id="t2" /><label for="t2">tagtag 2<span></span></label></p>
+        <p><input type="checkbox" id="t3" /><label for="t3">tag 3<span></span></label></p>
+      </div>
+      <div class="third">
+        <p><input type="checkbox" id="t4" /><label for="t4">tag 4<span></span></label></p>
+      </div>
+      <div class="third">
+        <p><input type="checkbox" id="t5" /><label for="t5">tag 5<span></span></label></p>
+      </div>
+    </form>
+
+    <input type="submit" value="OK" class="add-tags-panel-ok"/>
+  </div>	
+
+{{/ifLoggedIn}}
